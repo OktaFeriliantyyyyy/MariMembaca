@@ -1,0 +1,99 @@
+.
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Yuk! Hari ini buku apa yang kamu baca?</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+          <div class="logo">
+            <h1>Mari Membaca Setiap Harinya!</h1>
+          </div>
+        </div>
+      </header>
+    <main>
+        <div class="container">
+            <div class="card">
+                <div class="input_section">
+                    <h2>Input Buku Bacaan</h2>
+                    <form id="inputBook">
+                        <div class="input">
+                            <label for="inputBookTitle">Judul buku</label>
+                            <input id="inputBookTitle" type="text" placeholder="" required>
+                        </div>
+                        <div class="input">
+                            <label for="inputBookAuthor">Author</label>
+                            <input id="inputBookAuthor" type="text" required placeholder="">
+                        </div>
+                        <div class="input">
+                            <label for="inputBookYear">Tahun Terbit </label>
+                            <input id="inputBookYear" type="number" required placeholder="">
+                        </div>
+                        <div class="input">
+                            <label for="inputBookCategory">Kategori</label>
+                            <select name="bookCategory" id="inputBookCategory" class="bookCategory" required>
+                                <option value="" selected></option>
+                                <option value="Tenlit">Tenlit</option>
+                                <option value="Metropop">Metropop</option>
+                                <option value="Romance">Romance</option>
+                                <option value="Anak-Anak">Anak-Anak</option>
+                            </select>
+                        </div>
+                        <div class="input">
+                            <label for="inputBookImage">Input Link Cover Buku </label>
+                            <input id="inputBookImage" type="text" required
+                                placeholder="">
+                        </div>
+                        <div class="input_inline">
+                            <label for="inputBookIsComplete">Selesai dibaca</label>
+                            <input id="inputBookIsComplete" type="checkbox">
+                        </div>
+                        <button id="bookSubmit" type="submit">Silahkan masukkan buku ke dalam lemari tracking buku <span>Belum selesai
+                                dibaca</span></button>
+                    </form>
+                </div>
+            </div>
+            <div class="card second">
+                <div class="searchCard">
+                    <div class="search" id="search">
+                        <div class="search-box shadow">
+                            <input id="search-txt" class="search-txt" type="text" name=""
+                                placeholder="">
+                            <button id="searchSubmit" type="submit">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                        <div class="BookCard">
+                        </div>
+                    </div>
+                </div>
+                <div class="bookShelf">
+                    <div class="bookStatus">
+                        <div class="BookshelfCard incompleteBookshelfList">
+                            <h2>Belum Selesai Dibaca</h2>
+                            <div class="BookCard" id="uncompleteBook">
+                            </div>
+                        </div>
+                        <div class="BookshelfCard completeBookshelfList">
+                            <h2>Selesai Dibaca</h2>
+                            <div class="BookCard" id="completeBook">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="js/script2.js"></script>
+</body>
+
+</html>
